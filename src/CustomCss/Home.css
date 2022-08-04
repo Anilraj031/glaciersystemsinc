@@ -342,6 +342,7 @@ p.abctech-1 {
     .contactusbtn {
         top: 700px !important;
         
+        
     }
 
     .abcAny {
@@ -354,18 +355,25 @@ p.abctech-1 {
 
     .abtusp {
         font-size: 9px !important;
-        height: 400px;
+        /* height: 400px; */
+        height: 500px;
+
+    }
+    .left{
+        height: 590px;
     }
 
     .divabt1234 {
         margin: auto;
     }
     .tophead{
-        height: 595px !important;
+        /* height: 595px !important; */
+        height: 650px !important;
         margin-top: 10%;
+
     }
-    .abtus123{
+    /* .abtus123{
         margin-top: 7% !important;
         margin-bottom: 5% !important;
-    }
+    } */
 }
