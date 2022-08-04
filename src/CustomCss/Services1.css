@@ -125,7 +125,7 @@ p.text24 {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid none;
     margin: auto;
     margin-top: 30px;
 }
@@ -136,7 +136,7 @@ p.text24 {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid none;
     margin-left: 14px;
     margin-top: 15px;
     margin-bottom:50px;
@@ -148,7 +148,7 @@ p.text24 {
     background-color: #FFFFFF;
     box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
     border-radius: 20px;
-    border: 1px solid black;
+    border: 1px solid none;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -156,21 +156,21 @@ p.text24 {
 .flex-item:hover {
     transform: scale(1.1);
     z-index: 2;
-    background-color: gainsboro;
-    /* background-color: #e3f2fd;*/
+    background-color: #1798E6;
+    color: white;
     
 }
 .flex-item1:hover {
     transform: scale(1.1);
     z-index: 2;
-    background-color: gainsboro;
-    /*background-color: #e3f2fd;*/
+    background-color: #1798E6;
+    color: white;
 }
 .flex-item3:hover {
     transform: scale(1.1);
     z-index: 2;
-    background-color: gainsboro;
-    /*background-color: #e3f2fd;*/
+    background-color: #1798E6;
+    color: white;
 }
 
 
