@@ -145,72 +145,67 @@ p.abctech-1 {
 }
 
 /*Services*/
-/* .servcdiv {
-    background: #ffff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
-    border-radius: 10px;
-    text-align: center;
-    padding-bottom: 3%;
-    font-family: 'Work Sans', sans-serif;
-}
-
-    .servcdiv:hover {
-        transform: scale(1.1);
-        z-index: 2;
-        
-    } 
-   
-     .servcdiv:hover{
-        background-color:#1798E6;
-        
-    }
-    */
 .homeservc {
-    /* padding: 5% 20% 0 20%;   */
-    padding: 5% 25% 5% 25%; 
-    Height: 200px;
-     /* width: 150px; */
-    /*height: 209px; */
+    
+    padding: 0 25% 0 25%; 
+    Height: 115px;
+     
 }
 .servctitle {
-    text-align: center;
-    
-    font-size: 25px;
+    text-align: center; 
+    /* font-size: 25px; */
     text-transform: uppercase;
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     font-weight: 600;
 }
 
 .servcul {
     text-align: left;
     font-size: 16px;
-    font-family: sans-serif;
+    font-family: 'Work Sans', sans-serif;
     line-height: 160%;
     margin-top: 5%;
 }
-/* .item{
-    background: #ffff;
-    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
-    border-radius: 10px; 
-    text-align: center; 
-     padding-bottom: 3%;
-    font-family: 'Work Sans', sans-serif;
-} */
-.card:hover{
-    background-color:#1798E6;
-   
-    
-}
-/*.learnmore {
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 18px;
-    
-    padding-left: 35%;
-} */
 
+.card{
+    background: none;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.04), 0px 8px 16px rgba(0, 0, 0, 0.08);
+    font-family: 'Work Sans', sans-serif;
+    /* text-transform: uppercase; */
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+  }
+  .card:hover{
+    color: white;
+    
+  }
+  .card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #1798E6;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  
+  .btn2::before{
+    transform: scaleY(0);
+  }
+  
+  .btn2:hover::before{
+    transform: scaleY(1);
+  }
+  
 
 
 @media (min-width: 992px) {
@@ -327,6 +322,7 @@ p.abctech-1 {
     .tophead{
         /* padding-top: 10% !important; */
         height: 700px !important; 
+        
         margin-top: 10%;
     }
     
@@ -344,28 +340,32 @@ p.abctech-1 {
     }
 
     .contactusbtn {
-        top: 750px !important;
+        top: 700px !important;
         
     }
 
     .abcAny {
         width: 100%;
+        height: 800px;
         margin-top:20%;
         padding-right:15%;
         padding-bottom: 20%;
     }
 
     .abtusp {
-        font-size: 12px;
+        font-size: 9px !important;
+        height: 400px;
     }
 
     .divabt1234 {
         margin: auto;
     }
     .tophead{
-        /* padding-top: 10% !important; */
-        height: 700px !important; 
+        height: 595px !important;
         margin-top: 10%;
     }
-    
+    .abtus123{
+        margin-top: 7% !important;
+        margin-bottom: 5% !important;
+    }
 }
