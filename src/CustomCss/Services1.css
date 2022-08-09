@@ -128,6 +128,7 @@ p.text24 {
     border: 1px solid none;
     margin: auto;
     margin-top: 30px;
+    
 }
 .flex-item1 {
     text-align: center;
@@ -157,20 +158,20 @@ p.text24 {
     transform: scale(1.1);
     z-index: 2;
     background-color: #1798E6;
-    color: white;
+    color: white !important;
     
 }
 .flex-item1:hover {
     transform: scale(1.1);
     z-index: 2;
     background-color: #1798E6;
-    color: white;
+    /* color: white; */
 }
 .flex-item3:hover {
     transform: scale(1.1);
     z-index: 2;
     background-color: #1798E6;
-    color: white;
+    /* color: white; */
 }
 
 
