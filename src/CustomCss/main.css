@@ -1,0 +1,250 @@
+﻿body {
+}
+
+/* for image background*/
+* {
+   /* color: white !important;*/
+}
+
+.items .card {
+   /* background-color: rgba(0,0,0,0.2) !important;*/
+}
+
+/* for image background*/
+/*p {
+    text-align: justify;
+    text-justify: inter-word;
+}*/
+
+
+.nav-link {
+    position: relative;
+    font-weight: 400;
+    font-size: 18px;
+}
+.navlink {
+    color: silver;
+}
+
+.navlink:hover{
+	color:white;
+}
+
+    .nav-link::after {
+        content: '';
+        width: 0%;
+        height: 3px;
+        position: absolute;
+        bottom: 5px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: darkred;
+        transition: 0.3s;
+    }
+
+    .nav-link:hover::after {
+        width: 80%;
+    }
+
+.fa1 {
+    padding: 4px;
+    font-size: 20px;
+    width: 40px;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    margin: 5px 2px !important;
+    border-radius: 5px;
+    height: 30px;
+}
+
+    .fa1:hover {
+        opacity: 0.7;
+    }
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+@media only screen and (min-width: 992px) {
+    .maindiv {
+        padding-top: 6% !important;
+    }
+
+    .modal-body {
+        margin-left: 20% !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .maindiv {
+        padding-top: 6% !important;
+    }
+    .multiple-items {
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .maindiv {
+        padding-top: 10%;
+    }
+
+    .modal-body {
+        margin-left: 5% !important;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .maindiv {
+        padding-top: 20%;
+    }
+
+    .modal-body {
+        margin-left: 5% !important;
+    }
+    #abtimg {
+        width: 100% !important;
+    }
+    .smallitems {
+        padding: 0% 0% !important;
+    }
+
+}
+
+
+@media only screen and (max-width: 300px) {
+    .modal-body {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+    #abtimg {
+        width: 100% !important;
+    }
+
+
+    
+}
+
+@media only screen and (max-width: 400px) {
+    .multiple-items {
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+    .modal-body {
+        margin-left: 0% !important;
+        width: 100% !important;
+    }
+    #abtimg {
+        width: 100% !important;
+    }
+    .smallitems{
+        padding:0% 0% !important;
+    }
+    .items .card {
+        width: 110%;
+    }
+	.homeimg1{
+		height:50% !important;
+	}
+	.pagetitle{
+		padding-top:30% !important;
+		height:30vh !important;
+	}
+}
+
+
+.navbar .megamenu {
+    padding: 1rem;
+}
+
+@media all and (min-width:992px) {
+
+    .navbar.has-megamenu {
+        position: static !important;
+    }
+
+    .navbar.megamenu {
+        left: 0;
+        right: 0;
+        width: 100%;
+        margin-top: 0;
+    }
+}
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px) {
+    .navbar.fixed-top .navbar-collapse, .navbar .sticky-top .navbar-collapse {
+        overflow-y: auto;
+        max-height: 100vh;
+        margin-top: 10px !important;
+    }
+}
+
+.navafter {
+    color: silver;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 42px;
+}
+
+    .navafter:hover {
+        color: white;
+    }
+
+.megamenu a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+    .megamenu a:hover {
+        color: darkred;
+    }
+
+h1, h2, h3, h4, h5, h6 {
+    color: darkred;
+}
+
+.reveal {
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+
+    .reveal.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #42555c;
+}
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }

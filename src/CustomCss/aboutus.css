@@ -1,0 +1,119 @@
+﻿body {
+}
+
+.about_us {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../images/landing3.jpeg), linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
+    background-blend-mode: darken;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    padding-top: 15%;
+    padding-left:10%;
+    color:white;
+}
+
+h2 {
+    text-align: center;
+}
+
+	.fixed-top {
+    background-color: #dee3ee !important;
+}
+
+.navlink {
+    color: darkred !important;
+}
+
+#aboutimage {
+    height:50%;
+    width:100%;
+    /*border-radius:5px;*/
+    border-top-left-radius:50px;
+    border-bottom-right-radius:50px;
+   /* border:10px solid #34618d;*/
+}
+
+
+.contact-image {
+    background-image: url("../images/2.jpg");
+    background-color: rgba(0,0,0,0.7);
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-blend-mode: darken;
+}
+
+.contact-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: darkred;
+}
+
+.homeBtn a {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 0px;
+    width: 140px;
+    display: inline-block;
+    color: white;
+}
+
+    .homeBtn a:hover {
+        background-color: darkred;
+        color: white;
+    }
+
+.experties {
+    padding: 2%;
+    text-align: center;
+}
+
+.expimg img {
+    padding-top: 1%;
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+
+.experties a {
+     font-weight:500;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center !important;
+        color:darkred;
+        text-decoration:none;
+}
+
+.expimg {
+	border: 1px solid gray;
+    box-shadow: 0px 0px 10px gray;
+    width: 100%;
+    align-content: center;
+    margin: auto !important;
+}
+
+    .expimg:hover {
+        background-color: #c46a72;
+        //box-shadow: 5px 10px 30px darkred;
+        height: stretch;
+        width: stretch;
+    }
+
+.abouticon {
+    background-color: transparent !important;
+    color: darkred !important;
+    width: 30px !important;
+    border: 1px solid darkred;
+}
+
+    .abouticon:hover {
+        background-color: dodgerblue !important;
+        color: white !important;
+    }

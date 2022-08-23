@@ -1,442 +1,311 @@
-
 <!DOCTYPE html>
-
 <html>
 <head runat="server">
-
-  
-
-<!-- bootstrap css file -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
-
-
-
-
-
     <title>Glacier Systems Inc</title>
-<link rel = "icon" href = "images/galcierlogo.png" type = "image/x-icon">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-
-
+    <link rel="icon" href="images/galcierlogo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.bundle.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+	
+    <link href="CustomCss/slick.css" rel="stylesheet" />
+    <link href="CustomCss/slick-theme.css" rel="stylesheet" />
+    <script src="CustomScripts/slick_custom.js"></script>
+	
+	
+    <link href="CustomCss/main.css" rel="stylesheet" />
     <link href="CustomCss/Home.css" rel="stylesheet" />
-    <link href="CustomCss/Careers.css" rel="stylesheet" />
-    <link href="CustomCss/ContactUs.css" rel="stylesheet" />
-    <link href="CustomCss/Services1.css" rel="stylesheet" />
-    <link href="CustomCss/About.css" rel="stylesheet" />
-
-    <link href="CustomCss/WebForm2.css" rel="stylesheet" />
-
-
-
-     <style>    
-         *{
-            font-family: 'Work Sans', sans-serif !important; 
-           
-         }
-
-        .hover:hover{
-            border-bottom:solid 3px #C3322DE5;
-            
-        }
-         .new4 {
-             border: 2px solid white;
-         }
-
-  /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 300px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-          display: block;
-        
-
-        }
-
-        .nav-item{
-            margin-left: 10px;
-            font-family:'Poppins', sans-serif;
-            font-size: 16px;
-            
-        
-        }
-         .nav-link {
-             color: black !important;
-             font-weight: 400;
-         }
-         .icons{
-             display:flex;
-             /*flex-direction:row;*/
-             /*align-items:center;*/
-             justify-content:center;
-             margin-top: 20px;
-            
-         }
-
-         /*.navbar{
-             background-color: #e3f2fd;
-         }*/
-
-
-         @media (min-width: 992px){
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
+	
+	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-}
-
-@media (min-width: 575px) and (max-width: 767px) {
-    
-}
-
-@media (min-width: 480px) and (max-width: 575px) {
-   .navbar-nav{ 
-       background-color:white;
-   }
-.tech{
-margin-left:0px;
-}
-.tech-1{
-margin-left:0px;
-}
-.v-line{
-margin-left:0px;
-}
-
-}
-
-@media (max-width: 479px) {
-
-   .navbar-nav{      
-       background-color:white;
-   }
-   .collapse{
-       position:relative;
-       background-color:white;
-       /*text-align:center;*/
-       padding-left:10px;
-   }
-   .dropdown-content{
-       background-color: white;
-       padding-left:10px;
-       
-   }
-
-}
-       
-    </style>
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            /////// Prevent closing from click inside dropdown
+            document.querySelectorAll('.dropdown-menu').forEach(function (element) {
+                element.addEventListener('click', function (e) {
+                    e.stopPropagation();
+                });
+            })
+        });
+	// DOMContentLoaded  end
+    </script>
 
 </head>
-<body>
-<nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid fixed-top" style="height:60px; font-weight:400;padding-left:5%;padding-right:5%;">
-  <div class="container-fluid navdiv123489">
-    <a class="navbar-brand" href="index.html"><img src="images/galcierlogopng.png" style="width:130px" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><span class="hover">Home</span></a>
-        </li>
-          <li class="nav-item">
-          <li class="nav-item dropdown">
-              <div class="dropdown">
-                  <a class="nav-link" href="#"><span class="hover">Services</span></a>
-                  <div class="dropdown-content">
-                    <a class="nav-link" href="Service1.html"><span class="hover">Dynamics 365 CRM</span></a>
-                    <a class="nav-link" href="Service2.html"><span class="hover">Middleware Integration with EDI </span></a>
-                    <a class="nav-link" href="Service3.html"><span class="hover">Data Analysis and Data Science</span></a>
-                    <a class="nav-link" href="Service4.html"><span class="hover">Product Development</span></a>
-                    <!-- <a class="nav-link" href="#"><span class="hover">Staff Augmentation</span></a> -->
-                </div>
 
-              </div>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About.html"><span class="hover">About Us</span></a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="Careers.html"><span class="hover">Careers</span></a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="Contact.html"><span class="hover">Contact Us</span></a>
-        </li>
+<body >
 
+ <script src="navbar.js"></script>
 
-         
-
-      </ul>
-    </div>
-  </div>
-</nav>
-    
-  
-     <!--- Landing Page ---->
-     <div class="container-fluid header1" >
-        <div class="row" >
-            <div class="col-md-6 abctech" >
-                <div class="tophead" style="border-left: 5px solid #C3322D; height: 400px; padding-left:15px; padding-top:5px;  " id="bordrleft">
-                    <h1 class="abctech-1"  style="font-size: 40px; font-weight: 700; opacity:0;" >Innovating <br>
-                                    Technologies, Inspiring <br>
-                                    Businesses: <span id="abctext" style="color:#C3322D;">Now Made<br> Easier Than Ever </span> 
-                </h1>
-               <p class="abctech-1" style="opacity:0;">
-                Founded in 2017, in order to help organizations meet various business requirements, Glacier Systems Inc. 
-                has been providing consultation regarding CRM and ERP solutions to its clients.
-                </p>
-                            
+      <div class="homepg" >
+        <video autoplay loop muted class="back-video" >
+          <source src="Video/home.mp4" type="video/mp4" >
+          Your browser does not support HTML5 video.
+        </video>
+       <div class="content" >
+           <div id="homeTag" class=" homeBtn container-fluid" data-aos="zoom-in" data-aos-duration="1500">
+           <h1>Innovating <br />Technologies,Inspiring <br />Businesses:<span style="color:darkred !important;"> Now Made Easier Than Ever</span></h1>
+                        <p style="font-size:15px;">We at Glacier Systems provide a cost-effective and fiscally prudent alternative to your business needs by utilizing resources both here and abroad without having to compromise in the quality of service.
+                            Our team has the experience and the required know-how to provide high-end technical solutions to our clients at a competitive rate.
+                        </p>
+                           <a class="btn btn-sm landbtn" href="about.html" >About Glacier &#x27F6</a>
+               <a class="btn btn-sm landbtn" href="Contact.html" >Contact Us &#x27F6</a>
+       </div>
+       </div>
+   </div>
+   
+     <section class="container pt-5">
+        <div class="row">
+            <div style="height:500px;overflow: visible;" class=" col-md-4 col-12 homeimg1" data-aos="fade-right" data-aos-duration="1000">
+                <img id="abtimg" src="images/landing3.jpeg" style="height: 100%; width: 160%;" />
             </div>
-            <a href="Contact.html"><input type="submit" class="contactusbtn" value="Contact Us" ></input></a> 
-          </div>
-            <div class="col-md-6">               
-                    <img class="abcAny" src="images/Photos/animation-removebg-preview.png" style=" padding-top:10%; padding-left: 12%;"/>              
-             </div> 
-            
-        </div>
-    </div>
-
-
-
-    <!--- About Us --->
-
-    <section class="abtus123"  >
-        <div class="container" id="conabtus123">
-            <div class="left" ></div>
-            <div class="right">
-                <div class="content">
-                    <h1 style="font-size: 40px; font-weight: lighter; color: black;">About Us</h1>
-                    <p class="abtusp">
-                            At Glacier Systems, we aim at providing high-end technical consulting solutions
-                            and services to our clients who are on the lookout for experienced service providers
-                            capable of facilitating the growth of the business at competitive rates without having
-                            to trade-off on quality. It is our core belief that high quality solutions services and 
-                            economic competitiveness should go hand-in-hand. As a result, we are constantly striving for
-                            excellence in relation to the needs of our clients by keeping them front and center of all our 
-                            activities and actively engage in discussions and take feedback from our clients on a routine basis. 
-                            We encourage and incentivize our team to engage in research and collaboration so as to churn out ideas 
-                            and be ready to tackle any issues that our clients may encounter in their daily operations.
-                    </p>
-                    <a href="About.html" class="btn" style="text-decoration: none; text-transform: uppercase; background-color: #1798E6; color: white; padding: 10px 20px; display: inline-block; letter-spacing: 2px;">Read More</a>
+            <div style="height:100%; margin:auto; --c:darkred; " class="col-md-8 col-12 container p-3 box" data-aos="fade-up" data-aos-duration="1500">
+                <div style="background-color:white; box-shadow: 5px 10px 8px #888888;" class="p-3">
+                    <h1>About Us</h1>
+                    <p>At Glacier Systems, we aim at providing high-end technical consulting solutions and services to our clients who are on the lookout for experienced service providers capable of facilitating the growth of the business at competitive rates without having to trade-off on quality. It is our core belief that high quality solutions services and economic competitiveness should go hand-in-hand. As a result, we are constantly striving for excellence in relation to the needs of our clients by keeping them front and center of all our activities and actively engage in discussions and take feedback from our clients on a routine basis.</p>
+                    <a href="https://www.facebook.com/glaciersystemsinc/" target="_blank" class="fa1 fa fa-facebook abouticon" ></a>
+                    <a href="https://www.linkedin.com/company/glacier-systems/about/" target="_blank" class="fa1 fa fa-linkedin abouticon"></a>
+                    <br /><span class="homeBtn">
+                    <a href="about.html" class="btn btn-sm btn-primary">Read More</a></span>
                 </div>
+                
+            </div>
+        </div>
+    </section>
+    <section style="padding:5% 0%;">
+        <div class="container reveal ps-5 pe-5">
+                <div class="text-center p-4"><h3>Our Services</h3></div>
+            <div class="row for-slick-slider multiple-items">
+                <div class="items col-lg-4 col-md-6 col-sm-6 pt-2 pb-2" >
+                    <div class="card container-fluid" >
+                    <img class="card-img-top img-fluid container-fluid" src="images/image9.png" alt="Card image" >
+                    <div class="card-body homeBtn ps-0 pe-0" >
+                      <h5 class="card-title">Dynamics 365/CRM</h5>
+                        <p style="text-align:center;">With Dynamics 365, companies can grow their business with a wide use of essential features for customer engagement and business analysis</p>
+                        <br />
+                      <a href="ServicesList/Dynamics.html" class="btn btn-sm btn-primary">Read More &#x27F6</a><br />
+                    </div>
+                  </div>
+                </div>
+                <div class="items col-lg-4 col-md-6 col-sm-6 pt-2 pb-2">
+                    <div class="card container-fluid" >
+                    <img class="card-img-top img-fluid container-fluid" src="images/image141.png" alt="Card image" >
+                    <div class="card-body homeBtn">
+                      <h5 class="card-title">Middleware Integration with EDI</h5>
+                        <p style="text-align:center;">EDI has played a vital role in improving data quality and eliminating lost data while keying errors.</p>
+                    <br />
+                      <a href="ServicesList/middleware.html" class="btn btn-sm btn-primary align-content-center">Read More &#x27F6</a><br />
+                    </div>
+                  </div>
+                </div>
+                <div class="items col-lg-4 col-md-6 col-sm-6 pt-2 pb-2" >
+                    <div class="card container-fluid" >
+                    <img class="card-img-top img-fluid container-fluid" src="images/database.png" alt="Card image" >
+                    <div class="card-body homeBtn">
+                      <h5 class="card-title">Data Analysis and Data Science</h5>
+                        <p style="text-align:center;">Data comes from disparate sources, which may not be limited to internal data. With our team of experts, </p>
+                      <br />
+                      <a href="ServicesList/dataanalysis.html" class="btn btn-sm btn-primary">Read More &#x27F6</a><br />
+                    </div>
+                  </div>
+                </div>
+                <div class="items col-lg-4 col-md-6 col-sm-6 pt-2 pb-2" >
+                    <div class="card container-fluid" >
+                    <img class="card-img-top img-fluid container-fluid" src="images/image 26.png" alt="Card image" >
+                    <div class="card-body homeBtn">
+                      <h5 class="card-title">Product Development</h5>
+                        <p style="text-align:center;">Building powerful and scalable web applications that empower enterprises and startups alike, to ride the wave of digitization,. </p>
+                      <br />
+                      <a href="ServicesList/productdevelopment.html" class="btn btn-sm btn-primary">Read More &#x27F6</a><br />
+                    </div>
+                  </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <h2 style="text-align:center;">Our Experties</h2><hr />
+        <div class="row expitems">
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+               <a href="DynamicsExperties/CRMInstallation.html" class="anchorexp">
+                    <div class="expimg">
+                    <img src="images/image%2015.png"/><p>CRM Installation and Implementation</p>
+                </div>
+                    </a>
+            </div>
+            <div class=" experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/crmintegration.html" class="anchorexp">
+                <div class="expimg">
+                <img src="images/image%2018.png" />
+                    <p>CRM Integration</p>
+                </div></a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/crmplugins.html" class="anchorexp">
+                <div class="expimg">
+                <img src="images/image%2019.png" />
+                    <p>CRM Plugins and Web Resource Deployment</p>
+                </div></a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DevelopmentExperties/Api.html" class="anchorexp"><div class="expimg">
+                <img src="images/apidev.jpg" />
+                    <p>API Development</p>
+                </div></a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="EDIExperties/Edi.html" class="anchorexp"><div class="expimg">
+                    <img src="images/image 24.png"/><p>EDI including ANSI, EDIFACT, XML, JSON</p>
+                </div>
+                    </a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/crmdatahandling.html" class="anchorexp">
+                <div class="expimg">
+                <img src="images/image%2022.png" />
+                    <p>CRM Data Migration and Data Handling</p>
+                </div></a>
             </div>
         </div>
     </section>
 
-     <!------- Services ---->
-
-    <div class="container">
-      <div>
-        <h1 style="font-weight: 700; font-size: 40px; line-height: 53px; letter-spacing: 0.05em; padding-bottom: 50px;">Our Services</h1>
-     </div>
-      <div class="row">
-        <div class="owl-carousel owl-theme">
-         
-          <div class="item">
-            <div class="card btn2 ">
-              <img class="homeservc"  src="images/Photos/crm.png" class="card-img-top" alt="...">
-               <div class="card-body">
-                <h4 class="servctitle">Dynamics 365 <br > CRM</h4></br>
-                  <ul class="servcul">
-                      <li>CRM Installation and Implementation</li>
-                      <li>CRM Integration</li>
-                      <li>CRM Plugins and Web Resource Development</li>
-                      <li>CRM Data Handling and Migration Services</li>
-                      <li>Support and Maintenance</li>
-                  </ul>
-                <div style="text-align: center;"> <a  href="Service1.html" class="btn btn-primary" >Learn More</a> </div> 
-              </div>
-            </div>
-          </div>
-
-
-          <div class="item">
-            <div class="card btn2 ">
-              <img class="homeservc" src="images/Photos/edi.png" class="card-img-top" alt="...">
-               <div class="card-body">
-                <h4 class="servctitle">Middleware Integration with EDI</h4>
-                 <ul class="servcul">
-                    <li>EDI Standards including ANSI, EDIFACT, XML, JSON and other formats</li>
-                    <li>Standard Inbound and Outbound EDI data mapping and testing</li>
-                    <li>Interfacing with different backend systems</li>
-                </ul>
-              <div style="text-align: center;"><a  href="Service2.html" class="btn btn-primary" >Learn More</a></div>
-            </div>
-          </div>
-        </div>
-            
-          <div class="item">
-            <div class="card btn2" >
-              <img class="homeservc" src="images/Photos/data.png" class="card-img-top" alt="...">
-               <div class="card-body">
-                <h4 class="servctitle">Data Analysis <br />and Data Science</h4></br>
-                   <ul class="servcul" >
-                      <li>Scope up Data Requirements</li>
-                      <li>Installation and Maintenance of Data Analysis Tool</li>
-                      <li>Data Mapping</li>
-                      <li>Data Migration and Maintenance</li>
-                  </ul>
-                </br></br><div style="text-align: center;"><a  href="Service3.html" class="btn btn-primary" >Learn More</a></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="item">
-            <div class="card btn2">
-              <img class="homeservc" src="images/ProductDevelopment.png" class="card-img-top" alt="...">
-               <div class="card-body">
-                <h4 class="servctitle">Product</br> Development </h2></br>
-                  <ul class="servcul" >
-                    <li>Web Application Development</li>
-                    <li>API Development Services</li>
-                   <li>Quality Assurance and Testing</li>
-                   <li>Web Application Testing</li>
-                   <li>API Testing</li>
-                  </ul>
-                </br><div style="text-align: center;"><a  href="Service4.html" class="btn btn-primary" >Learn More</a></div>
-              </div>
-            </div>
-          </div>
-
-
-          <!-- <div class="item">
-            <div class="card btn2">
-              <img class="homeservc" src="images/StaffAugmentation.png"  class="card-img-top" alt="..."> 
-              <div class="card-body">
-                <h4 class="servctitle">Staff </br>Augmentation</h4></br>
-                  <ul class="servcul" > 
-                     <li>Agile/Scrum Master</li>
-                     <li>C# .Net</li>
-                     <li>Python</li>
-                     <li>JavaScript</li>
-                     <li>SQL Development</li>
-                     <li>Java</li>
-                     <li>Web Applicatio/UI, Selinium</li>
-                  </ul>
-                </br><div style="text-align: center;"><a  href="Service5.html" class="btn btn-primary" style="color: black;">Learn More</a></div>
-              </div>
-            </div>
-          </div> -->
-          
-      </div>
-    </div>
-  </div> 
-        <footer class="container-fluid bg-dark">  
-            <div class="row" style="/*border:3px solid red;*/ padding-left:2%; padding-top:2%;">
-                <div class="col-md-4 p-4 ftdiv text-white">
-                    <div style="text-align:center;"><img src="images/galcierlogopng.png" style="width:140px; "/></div>
-                    <p style="font-size:12px; text-align: justify;">
-                        Founded in 2017, in order to help organizations meet various business requirements, Glacier Systems Inc. 
-                        has been providing consultation regarding CRM and ERP solutions to its clients.
-                    </p>
+   <section class="container pt-5">
+       <div class="align-content-center">
+           <h2 style="text-align:center;">Contact Us</h2><hr />
+           <div class="row">
+               <div class="col-md-6 col-sm-12 container" >
+                   <div class="modal-body pt-4 homeBtn" style="height:650px;background-color:#c46a72;margin:auto !important;clip-path: polygon(0% 0%, 100% 0%, 100% 93%, 76% 93%, 75% 100%, 48% 93%, 0 93%);">
+                       <h5>KEEP IN TOUCH</h5>
+                    <iframe src="https://glaciernewsite.azurewebsites.net/" scrolling="no" style="border:0;height:100%;width:100%;" allowfullscreen=""  referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
-
-                <div class="col-md-4 p-4 ftdiv text-white" style="/*border:5px solid red;*/ text-align:center;">
-                     <h5 style="font-weight:600;">About Glacier</h5>
-            <div style="margin-top:20px; /*justify-content:center;*/  padding-left:45px;">
-                  <div class="d-flex" style:"align-item:center;">
-                    <div class="contact-icon">
-                      <i class="bi bi-geo-alt" style:"color:red;"></i>
-                    </div>
-                    <div class="contact-info">
-                      <p style="margin-left:10px;">Cary, North Carolina(United States)</p>
-                    </div>
-                  </div>
-               
-
-                  <div class="d-flex">
-                    <div class="contact-icon">
-                      <i class="bi bi-telephone"></i>
-                    </div>
-                    <div class="contact-info">
-                      <p style="margin-left:10px;">919 655 4409</p>
-                    </div>
-                  </div>
-                  <div class="d-flex pb-4">
-                    <div class="contact-icon">
-                      <i class="bi bi-envelope"></i>
-                    </div>
-                    <div class="contact-info">
-                      <a href="mailto:info@glaciersystemsinc.com" style="margin-left:10px; text-decoration:none; color:white;">itsupport@glaciersystemsinc.com</a>
-                    </div>
-                    </div>
-                </div>
-                    </div>
-
-                <div class="col-md-4 p-4 ftdiv text-white" style="/*border:1px solid #A9A9B0; background-color:Highlight; margin-top:2%;*/ text-align:center;">
-                     <h5 style="font-weight:600;">We are also on :</h5>               
-                      <div class="icons">
-                         <div>
-                             <a target="_blank" href="https://www.facebook.com/glaciersystemsinc/"><i class="bi bi-facebook" style=" font-size:30px; color:white;"></i></a>
-                         </div>
-                         <div>
-                             <a target="_blank" href="https://www.linkedin.com/company/glacier-systems/" style="color:white;"><i class="bi bi-linkedin" style="margin-left:25px; font-size:30px;"></i></a>
-                         </div>                            
-                      </div>
-                </div>
-
-             </div>              
-            <div> <hr class="new4"> </div>
-            <div style="color: white; text-align: center; height:5vh;">&copy Copyright 2022! Glacier System Inc.</div>
-           
-
-           
-        </footer> 
-
-
-
-        <!-- bootstrap js file -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
-        <script>
-            $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    nav:true,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        1000:{
-            items:3
-        }
-    }
-})
-        </script>
-
-
-      </body>
-
+               </div>
+               <div class="col-md-6 col-sm-12 pt-5">
+                   <div>
+                       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.8010858832245!2d85.32199271458353!3d27.723427231393007!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb195c177a6829%3A0x4f52a94766eba4b0!2sGlacier%20Systems%20Inc.!5e0!3m2!1sen!2snp!4v1656929159017!5m2!1sen!2snp" style="border:0;height:200px; width:100%; border-radius:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                   </div>
+                   <div class="row pt-5">
+                       <div class="col-md-6 col-sm-12">
+                           <h5>United States</h5><hr />
+                           <div class="d-flex pb-0">
+                               <div class="contact-icon">
+                                   <i class="fa fa-map-marker"></i>
+                               </div>
+                               <div class="contact-info">
+                                   <p style="margin-left: 10px;">Cary, North Carolina(United States)</p>
+                               </div>
+                           </div>
+                           <div class="d-flex pb-0" style="margin-top: 0px;">
+                               <div class="contact-icon">
+                                   <i class="fa fa-phone"></i>
+                               </div>
+                               <div class="contact-info">
+                                   <p style="margin-left: 10px;">+1 919 655 4409</p>
+                               </div>
+                           </div>
+                           <div class="d-flex pb-0">
+                               <div class="contact-icon">
+                                   <i class="fa fa-envelope-o"></i>
+                               </div>
+                               <div class="contact-info">
+                                   <a href="mailto:itsupport@glaciersystemsinc.com" style="margin-left: 10px;">itsupport@glaciersystemsinc.com</a>
+                               </div>
+                           </div>
+                       </div>
+                       <div class="col-md-6 col-sm-12">
+                           <h5>Nepal</h5><hr />
+                           <div class="d-flex pb-0">
+                               <div class="contact-icon">
+                                   <i class="fa fa-map-marker" ></i>
+                               </div>
+                               <div class="contact-info">
+                                   <p style="margin-left: 10px;">Shree Marga, Lazimpat, Nepal</p>
+                               </div>
+                           </div>
+                           <div class="d-flex pb-0" style="margin-top: 0px;">
+                               <div class="contact-icon">
+                                   <i class="fa fa-phone"></i>
+                               </div>
+                               <div class="contact-info">
+                                   <p style="margin-left: 10px;">+977 9843060281</p>
+                               </div>
+                           </div>
+                           <div class="d-flex pb-0">
+                               <div class="contact-icon">
+                                   <i class="fa fa-envelope-o"></i>
+                               </div>
+                               <div class="contact-info">
+                                   <a href="mailto:itsupport@glaciersystemsinc.com" style="margin-left: 10px;">itsupport@glaciersystemsinc.com</a>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </section>
+    <script src="footer.js"></script>
+    <script src="CustomScripts/slick.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
 </html>
+<script>
+        AOS.init();
+    </script>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            if (document.title == "Glacier Systems Inc") {
+                //$(".fixed-top").css("background-color", "transparent");
+                $(window).scroll(function () { // check if scroll event happened
+                    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                        //alert(document.title);
+                        $(".fixed-top").css("background-color", "#dee3ee");
+                        const navlink = document.querySelectorAll('.navlink');
+                        // Change the text of multiple elements with a loop
+                        navlink.forEach(element => {
+                            element.style.color = 'darkred';
+                        });
+                    }
+                    else {
+                        $(".fixed-top").css("background-color", "transparent");
+                        const navlink = document.querySelectorAll('.navlink');
+                        // Change the text of multiple elements with a loop
+                        navlink.forEach(element => {
+                            element.style.color = 'silver';
+                        });
+                        // if not, change it back to transparent
+                    }
+
+                });
+            }
+            else {
+                $(".fixed-top").css("background-color", "transparent");
+                const navlink = document.querySelectorAll('.navlink');
+                // Change the text of multiple elements with a loop
+                navlink.forEach(element => {
+                    element.style.color = 'darkred';
+                });
+            }
+        });
+    </script>

@@ -1,322 +1,153 @@
-
 <!DOCTYPE html>
-
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head runat="server">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css" integrity="sha384-eoTu3+HydHRBIjnCVwsFyCpUDZHZSFKEJD0mc3ZqSBSb6YhZzRHeiomAUWCstIWo" crossorigin="anonymous">
-
-
-
-
-
     <title>About Glacier</title>
-<link rel = "icon" href = "images/galcierlogo.png" type = "image/x-icon">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-
-
-
+    <link rel="icon" href="images/galcierlogo.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="Content/bootstrap.min.css" rel="stylesheet" />
     <script src="Scripts/bootstrap.bundle.min.js"></script>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link href="CustomCss/Home.css" rel="stylesheet" />
-    <link href="CustomCss/Careers.css" rel="stylesheet" />
-    <link href="CustomCss/ContactUs.css" rel="stylesheet" />
-    <link href="CustomCss/Services1.css" rel="stylesheet" />
-    <link href="CustomCss/About.css" rel="stylesheet" />
-
-    <link href="CustomCss/WebForm2.css" rel="stylesheet" />
-
-     <style>    
-         *{
-            font-family: 'Work Sans', sans-serif !important; 
-           
-         }
-
-        .hover:hover{
-            border-bottom:solid 3px #C3322DE5;
-            
-        }
-         .new4 {
-             border: 2px solid white;
-         }
-
-  /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: #f9f9f9;
-          min-width: 300px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block;
-        }
-
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {
-          display: block;
-        
-
-        }
-
-        .nav-item{
-            margin-left: 10px;
-            font-family:'Poppins', sans-serif;
-            font-size: 16px;
-            
-        
-        }
-         .nav-link {
-             color: black !important;
-             font-weight: 400;
-         }
-         .icons{
-             display:flex;
-             /*flex-direction:row;*/
-             /*align-items:center;*/
-             justify-content:center;
-             margin-top: 20px;
-            
-         }
-
-         /*.navbar{
-             background-color: #e3f2fd;
-         }*/
-
-
-         @media (min-width: 992px){
-
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-    
-}
-
-@media (min-width: 575px) and (max-width: 767px) {
-    
-}
-
-@media (min-width: 480px) and (max-width: 575px) {
-   .navbar-nav{ 
-       background-color:white;
-   }
-
-}
-
-@media (max-width: 479px) {
-
-   .navbar-nav{      
-       background-color:white;
-   }
-   .collapse{
-       position:relative;
-       background-color:white;
-       /*text-align:center;*/
-       padding-left:10px;
-   }
-   .dropdown-content{
-       background-color: white;
-       padding-left:10px;
-       
-   }
-
-}
-       
-    </style>
-
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <link href="CustomCss/main.css" rel="stylesheet" />
+	<link href="CustomCss/aboutus.css" rel="stylesheet" />
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-<nav class="navbar navbar-expand-sm navbar-light bg-light container-fluid fixed-top" style="height:60px; font-weight:400;padding-left:5%;padding-right:5%;">
-  <div class="container-fluid navdiv123489">
-    <a class="navbar-brand" href="index.html"><img src="images/galcierlogopng.png" style="width:130px" /></a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><span class="hover">Home</span></a>
-        </li>
-          <li class="nav-item">
-          <li class="nav-item dropdown">
-              <div class="dropdown">
-                  <a class="nav-link" href="#"><span class="hover">Services</span></a>
-                  <div class="dropdown-content">
-                    <a class="nav-link" href="Service1.html"><span class="hover">Dynamics 365 CRM</span></a>
-                    <a class="nav-link" href="Service2.html"><span class="hover">Middleware Integration with EDI </span></a>
-                    <a class="nav-link" href="Service3.html"><span class="hover">Data Analysis and Data Science</span></a>
-                    <a class="nav-link" href="Service4.html"><span class="hover">Product Development</span></a>
-                    <!-- <a class="nav-link" href="Service5.html"><span class="hover">Staff Augmentation</span></a> -->
-                  </div>
 
-              </div>
-            </li>
-        <li class="nav-item">
-          <a class="nav-link" href="About.html"><span class="hover">About Us</span></a>
-        </li>
-         <li class="nav-item">
-          <a class="nav-link" href="Careers.html"><span class="hover">Careers</span></a>
-        </li>
-          <li class="nav-item">
-          <a class="nav-link" href="Contact.html"><span class="hover">Contact Us</span></a>
-        </li>
-
-
-         
-
-      </ul>
-    </div>
-  </div>
-</nav>
-    
-    
-<div class="sbgimg44">
-          <div id="overlay44">
-                    <div class="a1" >
-                        <h1 style="font-family: 'Segoe UI'; font-weight: 600 !important; letter-spacing: 1px; text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);">About Us</h1>
-                        <div style="height: 3.75px; margin-top: -5px; width: 180px; background-color: #C3322D; box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);"></div>
-                 
-                    </div> 
-          </div>
-</div>
-
-
-    <div class="container-fluid" >
-    <div class="row">
-
-        <div class="col-sm-6  abimage">
-            <img class="tpimage" src="images/team2.jpeg"/>      
-        </div>
-
-
-      <div class="col-sm-6 abdiv">
-       <h2 class="abdiv12" style="opacity:0;"><center><b>Who Are We ?</b></center></h2>
-                    <p class="abdiv12" style="opacity:0;"> 
-                            Glacier Systems was founded in 2017 by members who collectively have over 60 years of ERP, Dynamics CRM,
-                            integrations, development and data management experience. Our team has expert knowledge of what is required
-                            to deliver solutions that will give our customers a competitive advantage at a reasonable cost. Along with our
-                            dynamic team of developers and solutions experts, we at Glacier Systems ensure the consistency and quality of services we deliver to our clients.
-                    </p>
-      </div>
-    </div>
-  </div>
-
-
-
-    <div class="container">
-        <div class="row" style="padding-bottom:50px;">
-
-            <div class="col-12 textdiv">
-                <div class="qsn123">&ndash;What We Do ?&ndash;</div>
-                    <p class="textdiv12">
-                        At Glacier Systems, we aim at providing high-end technical consulting solutions 
-                        and services to our clients who are on the lookout for experienced service providers 
-                        capable of facilitating the growth of the business at competitive rates without having 
-                        to trade-off on quality. It is our core belief that high quality solutions services and 
-                        economic competitiveness should go hand-in-hand. As a result, we are constantly striving 
-                        for excellence in relation to the needs of our clients by keeping them front and center of 
-                        all our activities and actively engage in discussions and take feedback from our clients on 
-                        a routine basis. We encourage and incentivize our team to engage in research and collaboration 
-                        so as to churn out ideas and be ready to tackle any issues that our clients may encounter in their daily operations.
-
-
-                    </p>
+<body style="box-sizing:border-box; /*background-color:#d4e2fb;*/ background-attachment:fixed;height:100vh;width:100%;background-size:cover; background-blend-mode:darken;">
+ <script src="navbar.js"></script>
+<section class="container maindiv">
+        <div class="row pt-2">
+            <div class="col-md-6">
+                <div class="p-4">
+                    <img data-aos="flip-left"
+                        data-aos-easing="ease-out-cubic"
+                        data-aos-duration="1500" src="images/team2.jpeg" id="aboutimage" />
+                </div>
             </div>
-            <div class="col-12 textdiv">
-                <div class="qsn123">&ndash;Why Us ?&ndash;</div>
-                    <p class="textdiv12">
-                                   
-                        There is an increasing need for quality-grade technical solutions for the US and North American 
-                        enterprises in the modern day business. With demand soaring for these services, the day to day operations of a 
-                        modern day business has become expensive for many organizations. We at Glacier Systems provide a cost-effective 
-                        and fiscally prudent alternative to your business needs by utilizing resources both here and abroad without having 
-                        to compromise in the quality of service. Our team has the experience and the required know-how to provide high-end 
-                        technical solutions to our clients at a competitive rate. With our team of experienced professionals, we ensure that 
-                        our clients needs are fully met whilst being fiscally prudent. As a company with developers and experts spread across 
-                        three continents, we make sure that we are capable of catering to our clients in a seamless fashion and we take steps 
-                        to ascertain that their needs are met promptly with utmost care.</>
-
-                    </p>
+            <div class="col-md-6 p-3 pt-2" >
+                <h2 data-aos="fade-down" data-aos-duration="2000" style="padding-top:5%;">Who Are We?</h2><hr />
+                <p data-aos="fade-up" data-aos-duration="2000" class="lateLoad">Glacier Systems was founded in 2017 by members who collectively have over 6 years of ERP, Dynamics CRM, integrations, development and data management experience. Our team has expert knowledge of what is required to deliver solutions that will give our customers a competitive advantage at a reasonable cost. Along with our dynamic team of developers and solutions experts, we at Glacier Systems ensure the consistency and quality of services we deliver to our clients.</p>
+                <a data-aos="fade-up" data-aos-duration="1500" href="https://www.facebook.com/glaciersystemsinc/" target="_blank" class="fa1 fa fa-facebook abouticon" ></a>
+                <a data-aos="fade-up" data-aos-duration="2000" href="https://www.linkedin.com/company/glacier-systems/about/" target="_blank" class="fa1 fa fa-linkedin abouticon"></a>
             </div>
-
         </div>
-    </div>
+    </section>
+    
+    <section class="container p-3">
+        <div class="reveal">
+            <h2>What We Do</h2><hr />
+            <p class="lateLoad">At Glacier Systems, we aim at providing high-end technical consulting solutions and services to our clients who are on the lookout for experienced service providers capable of facilitating the growth of the business at competitive rates without having to trade-off on quality. It is our core belief that high quality solutions services and economic competitiveness should go hand-in-hand. As a result, we are constantly striving for excellence in relation to the needs of our clients by keeping them front and center of all our activities and actively engage in discussions and take feedback from our clients on a routine basis. We encourage and incentivize our team to engage in research and collaboration so as to churn out ideas and be ready to tackle any issues that our clients may encounter in their daily operations.</p>
+        </div>
+    </section>
+    <section class="pt-2 pb-3 container">
+        <div class=" reveal" >
+            <div class="row for-slick-slider multiple-items " >
+                <div class=" items experties col-lg-4 col-md-6 col-sm-12">
+                <div class="expimg pb-1">
+                    <img src="images/image9.png"/>
+                    <h5>Dynamics 365/CRM</h5>
 
-
-	
-	
-        <footer class="container-fluid bg-dark">  
-            <div class="row" style="/*border:3px solid red;*/ padding-left:2%; padding-top:2%;">
-
-
-
-                <div class="col-md-4 p-4 ftdiv text-white">
-                    <div style="text-align:center;"><img src="images/galcierlogopng.png" style="width:140px; "/></div>
-                    <p style="font-size:12px; text-align: justify;">
-                        Founded in 2016, in order to help organizations meet various business requirements, Glacier Systems Inc. 
-                        has been providing consultation regarding CRM and ERP solutions to its clients.
-                    </p>
                 </div>
+            </div>
+               <div class=" items experties col-lg-4 col-md-6 col-sm-12">
+                <div class="expimg pb-1">
+                    <img src="images/image 24.png"/>
+                    <h5>Middleware Integration</h5>
 
-                <div class="col-md-4 p-4 ftdiv text-white" style="/*border:5px solid red;*/ text-align:center;">
-                     <h5 style="font-weight:600;">About Glacier</h5>
-            <div style="margin-top:20px; /*justify-content:center;*/  padding-left:45px;">
-                  <div class="d-flex" style:"align-item:center;">
-                    <div class="contact-icon">
-                      <i class="bi bi-geo-alt" style:"color:red;"></i>
-                    </div>
-                    <div class="contact-info">
-                      <p style="margin-left:10px;">Cary, North Carolina(United States)</p>
-                    </div>
-                  </div>
-               
-
-                  <div class="d-flex">
-                    <div class="contact-icon">
-                      <i class="bi bi-telephone"></i>
-                    </div>
-                    <div class="contact-info">
-                      <p style="margin-left:10px;">919 655 4409</p>
-                    </div>
-                  </div>
-                  <div class="d-flex pb-4">
-                    <div class="contact-icon">
-                      <i class="bi bi-envelope"></i>
-                    </div>
-                    <div class="contact-info">
-                      <a href="mailto:info@glaciersystemsinc.com" style="margin-left:10px; text-decoration:none; color:white;">itsupport@glaciersystemsinc.com</a>
-                    </div>
-                    </div>
                 </div>
-                    </div>
+            </div>
+                <div class=" items experties col-lg-4 col-md-6 col-sm-12">
+                <div class="expimg pb-1">
+                    <img src="images/image 25.png"/>
+                    <h5>Data Analysis and Data Science</h5>
 
-                <div class="col-md-4 p-4 ftdiv text-white" style="/*border:1px solid #A9A9B0; background-color:Highlight; margin-top:2%;*/ text-align:center;">
-                     <h5 style="font-weight:600;">We are also on :</h5>               
-                      <div class="icons">
-                         <div>
-                             <a target="_blank" href="https://www.facebook.com/glaciersystemsinc/"><i class="bi bi-facebook" style=" font-size:30px; color:white;"></i></a>
-                         </div>
-                         <div>
-                             <a target="_blank" href="https://www.linkedin.com/company/glacier-systems/" style="color:white;"><i class="bi bi-linkedin" style="margin-left:25px; font-size:30px;"></i></a>
-                         </div>    
-                          
-                      </div>
                 </div>
+            </div>
+              
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="reveal">
+            <h2>Why Us</h2>
+            <hr />
+            <p class="lateLoad">There is an increasing need for quality-grade technical solutions for the US and North American enterprises in the modern day business. With demand soaring for these services, the day to day operations of a modern day business has become expensive for many organizations. We at Glacier Systems provide a cost-effective and fiscally prudent alternative to your business needs by utilizing resources both here and abroad without having to compromise in the quality of service. Our team has the experience and the required know-how to provide high-end technical solutions to our clients at a competitive rate. With our team of experienced professionals, we ensure that our clients needs are fully met whilst being fiscally prudent. As a company with developers and experts spread across three continents, we make sure that we are capable of catering to our clients in a seamless fashion and we take steps to ascertain that their needs are met promptly with utmost care. </p>
+        </div>
+    </section>
+	<section class="pt-2 pb-3 container">
+        <div class=" reveal">
+            <div class="row for-slick-slider multiple-items">
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/CRMInstallation.aspx" class="anchorexp">
+                    <div class="expimg">
+                    <img src="images/image%2015.png"/><p>CRM Installation and Implementation</p>
+                </div>
+                    </a>
+            </div>
+            <div class=" experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/crmintegration.aspx" class="anchorexp">
+                <div class="expimg">
+                <img src="images/image 24.png" />
+                    <p>EDI Standards including ANSI, EDIFACT,</p>
+                </div></a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/crmplugins.aspx" class="anchorexp">
+                <div class="expimg">
+                <img src="images/webapplicationdev.jpg" />
+                    <p>Web App Development</p>
+                </div></a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/crmdatahandling.aspx" class="anchorexp">
+                <div class="expimg">
+                <img src="images/qualityassurence.jpg" />
+                    <p>API Development</p>
+                </div></a>
+            </div>
+            <div class="experties col-lg-4 col-md-6 col-sm-12">
+                <a href="DynamicsExperties/supportandmaintenance.aspx" class="anchorexp">
+                <div class="expimg">
+                <img src="images/image%2023.png" />
+                    <p>Support and Maintenance</p>
+                </div></a>
+            </div>
+        </div>
+        </div>
+    </section>
+    <br />
+    
+    <section class="container reveal">
+        <div class="contact-image" style="clip-path: polygon(12% 0, 100% 0, 90% 100%, 0% 100%);">
+            <div class="contact-text homeBtn">
+                <h4 style="font-size: 50px">Need Help?</h4>
+                <a class="btn btn-md" href="Contact.aspx">Contact Us</a>
+            </div>
+        </div>
+    </section>
+ <script src="footer.js"></script>
+       
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
 
-             </div>              
-            <div> <hr class="new4"> </div>
-            <div style="color: white; text-align: center; height:5vh;">&copy Copyright 2022! Glacier System Inc.</div>
-           
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 150;
 
-           
-        </footer> 
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+    </script>
 </body>
 </html>
