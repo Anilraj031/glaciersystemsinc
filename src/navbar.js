@@ -7,7 +7,7 @@ var html='<nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-right
 	'<div class="collapse navbar-collapse justify-content-end" id="main_nav">'+
 		'<ul class="navbar-nav">'+
 			'<li class="nav-item active"> <a class="nav-link" href="index.html"><span class="navlink">Home </span></a> </li>'+
-			'<li class="nav-item"><a class="nav-link" href="about.html"><span class="navlink"> About</span> </a></li>'+
+			'<li class="nav-item"><a class="nav-link" href="About.html"><span class="navlink"> About</span> </a></li>'+
 			'<li class="nav-item dropdown has-megamenu" style="position:static !important;">'+
 				'<a class="dropdown-toggle navafter navlink" href="#" data-bs-toggle="dropdown" ><span style="font-weight:400;"> Services</span> </a>'+
 				'<div class="dropdown-menu megamenu dropdown-menu-lg-end w-100" role="menu" style="border-radius:0px;background-color:gainsboro;margin-top:-2px;">'+
