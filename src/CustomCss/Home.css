@@ -180,6 +180,7 @@
 
     .expimg:hover {
         background-color: #c46a72;
+		color:black;
         box-shadow: 5px 10px 8px #f7c3c6;
         height: stretch;
         width:stretch;

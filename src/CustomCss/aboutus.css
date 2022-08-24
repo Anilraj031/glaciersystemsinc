@@ -83,7 +83,7 @@ h2 {
 }
 
 .experties a {
-     font-weight:500;
+     font-weight:400;
         margin-top: 20px;
         margin-bottom: 20px;
         text-align: center !important;
@@ -101,6 +101,7 @@ h2 {
 
     .expimg:hover {
         background-color: #c46a72;
+		color:black;
         //box-shadow: 5px 10px 30px darkred;
         height: stretch;
         width: stretch;
