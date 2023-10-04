@@ -4,7 +4,7 @@ var html= '<footer id="footer" class="container-fluid bg-dark" style="background
              ' <div class="col p-3  text-white text-center justify-content-center">'+
                ' <div class="container-fluid" >'+
                 '  <img src="../images/galcierlogo.png" style="width:50px;" />'+
-               ' <p style="font-size:12px;">As a company with developers and experts spread across three continents, we make sure that we are capable of catering to our clients in a seamless fashion and we take steps to ascertain that their needs are met promptly with utmost care. </p>'+
+               ' <p style="font-size:12px;">As a company with developers and technical experts spread across three continents, we are capable of seamlessly delivering services to our clients and ensuring that their needs are met promptly with the utmost attention to detail. </p>'+
                 '</div>'+
                 '</div>'+
               '<div class="col p-3  text-white">'+
